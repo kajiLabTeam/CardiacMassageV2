@@ -23,7 +23,7 @@ class manual : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.manual)
 
-        val Sub_Activity = Intent(this, SubActivity01::class.java)
+        val Sub_Activity = Intent(this, MainActivity::class.java)
 
         val title = findViewById<TextView>(R.id.manual_title)
         val text = findViewById<TextView>(R.id.manual_text)

@@ -13,7 +13,7 @@ class Opening : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.opening)
 
-        val Sub_Activity = Intent(this, SubActivity01::class.java)
+        val Sub_Activity = Intent(this, MainActivity::class.java)
 
         val Video1 = findViewById<VideoView>(R.id.Opening_video)
 

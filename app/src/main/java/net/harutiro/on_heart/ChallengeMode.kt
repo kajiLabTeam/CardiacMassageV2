@@ -324,7 +324,7 @@ class ChallengeMode : Activity() {
     }
 
     override fun onBackPressed() {
-        val Sub_Activity = Intent(this, SubActivity01::class.java)
+        val Sub_Activity = Intent(this, MainActivity::class.java)
         startActivity(Sub_Activity)
     }
 
@@ -425,7 +425,7 @@ class ChallengeMode : Activity() {
     //サマリー画面で表示する 最大値,最小値,第一四分位数,第二四分位数,第三四分位数 を計算し出力
     //ほんとにリファクタリングできてなくてごめん
     fun summaryInfo() {
-        val topPage = Intent(this, SubActivity01::class.java)
+        val topPage = Intent(this, MainActivity::class.java)
 
         val BackButton = findViewById<Button>(R.id.BackButton2)
 
@@ -532,7 +532,7 @@ class ChallengeMode : Activity() {
 
     fun loading() {
         val loading_video = findViewById<VideoView>(R.id.Loading_practice)
-        val topPage = Intent(this, SubActivity01::class.java)
+        val topPage = Intent(this, MainActivity::class.java)
 
         loading_video.setVideoURI(Uri.parse("android.resource://" + this.packageName + "/" + R.raw.mov_challenge))
         loading_video.start()

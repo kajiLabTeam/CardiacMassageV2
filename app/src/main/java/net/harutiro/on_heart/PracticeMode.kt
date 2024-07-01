@@ -66,7 +66,7 @@ class PracticeMode : Activity() {
             setContentView(R.layout.practice)
             setViews()  // ビューの設定
             findViewById<Button>(R.id.BackButton).setOnClickListener {
-                startActivity(Intent(this, SubActivity01::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
             }
             samplingRate = count
             Log.d("SamplingRate", samplingRate.toString())
@@ -239,7 +239,7 @@ class PracticeMode : Activity() {
     // 戻るボタンが押されたときの処理
     override fun onBackPressed() {
         mediaPlayer?.stop()
-        startActivity(Intent(this, SubActivity01::class.java))
+        startActivity(Intent(this, MainActivity::class.java))
     }
 
     // クラス内のコンパニオンオブジェクト
