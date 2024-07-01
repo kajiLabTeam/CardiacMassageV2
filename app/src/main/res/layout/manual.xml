@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manual"
+    android:background="@drawable/manual_bg8">
+
+    <TextView
+        android:id="@+id/manual_text"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="right|top"
+        android:text="@string/manual_text"
+        android:textColor="#595457"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/outline_image"
+        app:layout_constraintTop_toBottomOf="@+id/manual_title" />
+
+    <ImageView
+        android:id="@+id/outline_image"
+        android:layout_width="238dp"
+        android:layout_height="230dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/outline_image"
+        android:src="@drawable/outline1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/manual_button3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+    <VideoView
+        android:id="@+id/outline_video1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <VideoView
+        android:id="@+id/outline_video2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/allow1"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/right_allow"
+        android:contentDescription="@string/allow1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/allow2"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/left_allow"
+        android:contentDescription="@string/allow2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/manual_button1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="#00000000"
+        android:text="Button"
+        android:textColor="#595457"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/manual_button2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:text="Button"
+        android:textColor="#595457"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/manual_button1"
+        app:layout_constraintTop_toBottomOf="@+id/manual_button1" />
+
+    <Button
+        android:id="@+id/manual_button3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:text="Button"
+        android:textColor="#595457"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/manual_button2"
+        app:layout_constraintTop_toBottomOf="@+id/manual_button2" />
+
+    <Button
+        android:id="@+id/manual_button4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:text="Button"
+        android:textColor="#595457"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/manual_button3"
+        app:layout_constraintTop_toBottomOf="@+id/manual_button3" />
+
+    <TextView
+        android:id="@+id/manual_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/manual_title"
+        android:textColor="#595457"
+        android:textSize="35sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/manual_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
