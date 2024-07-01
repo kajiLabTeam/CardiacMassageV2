@@ -107,7 +107,7 @@ public class PracticeMode extends Activity { //よろしくお願いします。
                     if (count == 100) {
                         for (int i = 25; i < 100; i++) {
                             sum_pressure += queue.get(i);
-                            //Log.d("count",String.valueOf(queue.get(i)));
+                            Log.d("count",String.valueOf(queue.get(i)));
                         }
                         ave_pressure = sum_pressure / (100 - 25);
                         today_pressure = ave_pressure;
@@ -116,7 +116,7 @@ public class PracticeMode extends Activity { //よろしくお願いします。
                         QueueSizeReseter = queue.size();
                         for (int i = 0; i < QueueSizeReseter; i++) queue.remove(0); //all clear (queue)
 
-                        feedText.setText("練習を開始してください");
+//                        feedText.setText("練習を開始してください");
                         samplingRate = (samplingRate - rateChecker) / 3;
                         //feedText.setText("SamplingRate = " + samplingRate + "Hz");
                     }
